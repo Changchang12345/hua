@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.head a{
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    margin-left: 500px;
+}
+.container {
+    margin-top: 20px;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas: "side side pic pic pic pic"
+}
+.head{
+    background-image: url("https://ww4.sinaimg.cn/bmiddle/6c942574ly1g9iqa3gbp0j21gr0u0jt1.jpg");
+}
+.pic{
+    grid-area: pic;
+    width: 100%;
+    background-image: url("https://icec.nefu.edu.cn/images/20181228105917.jpg");
+}
+.head h1{
+    text-align: center;
+    color: antiquewhite;
+    font-family: "华文行楷";
+    padding:20px 5px;
+}
+.side{
+    height: 100%;
+    width:100%;
+    margin-top: 0px;
+    grid-area: side;
+    background-image:url("https://ww4.sinaimg.cn/bmiddle/6c942574ly1g9iqa3gbp0j21gr0u0jt1.jpg");
+}
+.side ul{
+    display: none;
+    list-style-type: none;
+}
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 17px;
+}
+.nav h2{
+    width: 100%;
+    padding:30px 15px ;
+    transition: transform 0.5s;
+    color:white;
+    text-align: center;
+    font-weight: bold;
+}
+.nav h2.header1{
+    opacity: 0.9;
+}
+.nav h2.header2{
+    opacity: 0.8;
+}
+.nav h2.header3{
+    opacity: 0.7;
+}
+.nav h2.header4{
+    opacity: 0.6;
+}
+.nav h2.header5{
+    opacity: 0.5;
+}
+.nav h2:hover{
+    opacity: 1;
+    transform: scale(1.1);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.nav a:hover{
+    color: peru;
+}
+.footer{
+    margin-top: 20px;
+    background-image: url("https://ww4.sinaimg.cn/bmiddle/6c942574ly1g9iqa3gbp0j21gr0u0jt1.jpg");
+}
+.footer p{
+    margin-left: 750px;
+    padding:15px 5px 10px 10px;
+    font-size: 15px;
+    color: white;
+}

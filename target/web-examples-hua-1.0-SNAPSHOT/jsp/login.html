@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    form{
+        margin-top: 0px;
+        padding: 100px;
+        color:black;
+        text-align: center;
+    }
+    div{
+        padding: 0px 0px;
+        background-image: url("../resources/bk.jpg");
+        height: 578px;
+    }
+    button{
+        padding: 5px 10px;
+        text-align: center;
+        background-color: white;
+        margin-left: 180px;
+    }
+    a{
+        padding: 0px 0px;
+        display: inline-block;
+        text-decoration: none;
+        margin: 40px 30px 70px 70px;
+        color: darkred;
+        font-size: 20px;
+    }
+    a:hover{
+        border: white 1px solid;
+    }
+</style>
+<body>
+<div>
+<form action="/login" method="post">
+    用户名：<input type="text" name="username"><br><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;密码：<input type="password" name="pwd"><br><br/>
+    <button type="submit">登录</button><br/>
+    <a href="/html">非管理员，点我</a>
+</form>
+</div>
+</body>
+</html>
